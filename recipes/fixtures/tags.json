@@ -1,0 +1,202 @@
+[
+{
+    "model": "recipes.tags",
+    "pk": 1,
+    "fields": {
+        "uid": "anise",
+        "name": "Anise"
+    }
+},
+{
+    "model": "recipes.tags",
+    "pk": 2,
+    "fields": {
+        "uid": "bitter",
+        "name": "Bitter"
+    }
+},
+{
+    "model": "recipes.tags",
+    "pk": 3,
+    "fields": {
+        "uid": "citrus",
+        "name": "Citrus"
+    }
+},
+{
+    "model": "recipes.tags",
+    "pk": 4,
+    "fields": {
+        "uid": "classic",
+        "name": "Classic"
+    }
+},
+{
+    "model": "recipes.tags",
+    "pk": 5,
+    "fields": {
+        "uid": "dessert",
+        "name": "Dessert Cocktails"
+    }
+},
+{
+    "model": "recipes.tags",
+    "pk": 6,
+    "fields": {
+        "uid": "duos",
+        "name": "Duos"
+    }
+},
+{
+    "model": "recipes.tags",
+    "pk": 7,
+    "fields": {
+        "uid": "fruity",
+        "name": "Fruity"
+    }
+},
+{
+    "model": "recipes.tags",
+    "pk": 8,
+    "fields": {
+        "uid": "herbaceous",
+        "name": "Herbaceous"
+    }
+},
+{
+    "model": "recipes.tags",
+    "pk": 9,
+    "fields": {
+        "uid": "highball",
+        "name": "Highball"
+    }
+},
+{
+    "model": "recipes.tags",
+    "pk": 10,
+    "fields": {
+        "uid": "iba",
+        "name": "International Bartenders Association Official Cock"
+    }
+},
+{
+    "model": "recipes.tags",
+    "pk": 11,
+    "fields": {
+        "uid": "milkandhoney",
+        "name": "Milk & Honey"
+    }
+},
+{
+    "model": "recipes.tags",
+    "pk": 12,
+    "fields": {
+        "uid": "modernclassic",
+        "name": "Modern Classic Cocktails"
+    }
+},
+{
+    "model": "recipes.tags",
+    "pk": 13,
+    "fields": {
+        "uid": "modern",
+        "name": "Modern Cocktails"
+    }
+},
+{
+    "model": "recipes.tags",
+    "pk": 14,
+    "fields": {
+        "uid": "nonalcoholic",
+        "name": "Nonalcoholic Drinks and Cocktails"
+    }
+},
+{
+    "model": "recipes.tags",
+    "pk": 15,
+    "fields": {
+        "uid": "punches",
+        "name": "Punches"
+    }
+},
+{
+    "model": "recipes.tags",
+    "pk": 16,
+    "fields": {
+        "uid": "savory",
+        "name": "Savory"
+    }
+},
+{
+    "model": "recipes.tags",
+    "pk": 17,
+    "fields": {
+        "uid": "shooter",
+        "name": "Shooter"
+    }
+},
+{
+    "model": "recipes.tags",
+    "pk": 18,
+    "fields": {
+        "uid": "shots",
+        "name": "Shots & Shooters"
+    }
+},
+{
+    "model": "recipes.tags",
+    "pk": 19,
+    "fields": {
+        "uid": "smoky",
+        "name": "Smoky"
+    }
+},
+{
+    "model": "recipes.tags",
+    "pk": 20,
+    "fields": {
+        "uid": "sour",
+        "name": "Sour"
+    }
+},
+{
+    "model": "recipes.tags",
+    "pk": 21,
+    "fields": {
+        "uid": "spicy",
+        "name": "Spicy"
+    }
+},
+{
+    "model": "recipes.tags",
+    "pk": 22,
+    "fields": {
+        "uid": "summer",
+        "name": "Summer"
+    }
+},
+{
+    "model": "recipes.tags",
+    "pk": 23,
+    "fields": {
+        "uid": "sweet",
+        "name": "Sweet"
+    }
+},
+{
+    "model": "recipes.tags",
+    "pk": 24,
+    "fields": {
+        "uid": "tiki",
+        "name": "Tiki Cocktails"
+    }
+},
+{
+    "model": "recipes.tags",
+    "pk": 25,
+    "fields": {
+        "uid": "tropical",
+        "name": "Tropical Cocktails"
+    }
+}
+]

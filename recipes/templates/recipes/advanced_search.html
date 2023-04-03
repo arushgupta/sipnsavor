@@ -1,0 +1,73 @@
+{% extends 'recipes/base.html' %}
+
+{% block content %}
+
+<form method="get" action="{% url 'advanced_search' %}">
+    <div class="form-group">
+      <h3>Advanced Search</h3>
+      <p>Select one or more ingredients:</p>
+      <div class="form-group">
+        {% for ingredient in ingredients %}
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="ingredients" id="{{ ingredient.name }}" value="{{ ingredient.name }}">
+          <label class="form-check-label badge badge-pill badge-primary" for="{{ ingredient.name }}">{{ ingredient.name }}</label>
+        </div>
+        {% endfor %}
+      </div>
+      <hr>
+      <p>Select one or more tags:</p>
+      <div class="form-group">
+        {% for tag in tags %}
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="tags" id="{{ tag.uid }}" value="{{ tag.uid }}">
+          <label class="form-check-label badge badge-pill badge-primary" for="{{ tag.uid }}">{{ tag.name }}</label>
+        </div>
+        {% endfor %}
+      </div>
+      <hr>
+      <button type="submit" class="btn btn-primary">Search</button>
+    </div>
+  </form>
+  
+
+  
+  
+  
+  
+  {% endblock %}
+  
+  <!-- <form method="get" action="#">
+      <div class="form-group">
+        <h3>Advanced Search</h3>
+        <p>Choose either ingredients or tags to search by:</p>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="search_by" id="ingredients_radio" value="ingredients" checked>
+          <label class="form-check-label" for="ingredients_radio">Ingredients</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="search_by" id="tags_radio" value="tags">
+          <label class="form-check-label" for="tags_radio">Tags</label>
+        </div>
+        <hr>
+        <p>Select one or more {{ search_by }}:</p>
+        <div class="form-group">
+          {% if search_by == 'ingredients' %}
+          {% for ingredient in ingredients %}
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="{{ search_by }}_list" id="{{ ingredient.name }}" value="{{ ingredient.name }}">
+            <label class="form-check-label badge badge-pill badge-primary" for="{{ ingredient.name }}">{{ ingredient.name }}</label>
+          </div>
+          {% endfor %}
+          {% else %}
+          {% for tag in tags %}
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="{{ search_by }}_list" id="{{ tag.uid }}" value="{{ tags.uid }}">
+            <label class="form-check-label badge badge-pill badge-primary" for="{{ tag.uid }}">{{ tag.name }}</label>
+          </div>
+          {% endfor %}
+          {% endif %}
+        </div>
+        <hr>
+        <button type="submit" class="btn btn-primary">Search</button>
+      </div>
+    </form> -->

@@ -17,17 +17,18 @@
 `pip install -r requirements.txt`
 
 8. Make Migrations:<br/>
-`./manage.py makemigrations`
+`python3 manage.py makemigrations`
 
 9. Run Migrations:<br/>
-`./manage.py migrate`
+`python3 manage.py migrate`
 
 10. Create superuser:<br/>
-`./manage.py createsuperuser`
+`python3 manage.py createsuperuser`
 
 11. Load Data: <br/>
-`./manage.py loaddata fixtures/ingredients.json`
+`python3 manage.py loaddata fixtures/ingredients.json`<br/>
+`python3 manage.py loaddata fixtures/tags.json`
 
-12. Run Server:
-`./manage.py runserver`
+12. Run Server:<br/>
+`python3 manage.py runserver`
 

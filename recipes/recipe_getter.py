@@ -84,4 +84,18 @@ class RecipeGetter:
 	        "X-RapidAPI-Host": os.environ.get('DD_API_HOST', '')
         }
         response = requests.request("GET", url, headers=headers, params=querystring)
+        # the response is an array containing one item
+        return response.json()[0]
+    
+    def tag_search(tags):
+        url = f"https://{os.environ.get('DD_API_HOST', '')}/v1/cocktails/tags"
+        querystring = {
+            "filters": tags
+        }
+        headers = {
+	        "X-RapidAPI-Key": os.environ.get('API_KEY', ''),
+	        "X-RapidAPI-Host": os.environ.get('DD_API_HOST', '')
+        }
+        response = requests.request("GET", url, headers=headers, params=querystring)
+        import pdb; pdb.set_trace()
         return response.json()

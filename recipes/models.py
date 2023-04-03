@@ -30,3 +30,14 @@ class UserIngredient(models.Model):
     
     def __str__(self):
         return f'{self.user.username} - {self.ingredient.name}'
+
+class Tags(models.Model):
+    uid = models.CharField(_('Unique ID'), max_length=25)
+    name = models.CharField(_('Name'), max_length=50)
+
+    class Meta:
+        verbose_name = _('Tag')
+        verbose_name_plural = _('Tags')
+    
+    def __str__(self):
+        return self.name

@@ -57,4 +57,4 @@ def get_bar_recipes(request):
     ingredient_names = ','.join([ui.ingredient.name for ui in user_ingredients])
     
     cocktails = RecipeGetter.bar_cocktails(ingredient_names)
-    return render(request, 'accounts/bar_recipes.html', {'cocktails': cocktails})
+    return render(request, 'recipes/recipe_list.html', {'cocktails': cocktails})
