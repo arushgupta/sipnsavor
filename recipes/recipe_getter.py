@@ -61,3 +61,15 @@ class RecipeGetter:
         
         return response
     
+    def bar_cocktails(ingredients):
+        url = f"https://{os.environ.get('DD_API_HOST', '')}/v1/cocktails/ingredients"
+        querystring = {
+            "filters": ingredients,
+            "type": "by_name"
+        }
+        headers = {
+	        "X-RapidAPI-Key": os.environ.get('API_KEY', ''),
+	        "X-RapidAPI-Host": os.environ.get('DD_API_HOST', '')
+        }
+        response = requests.request("GET", url, headers=headers, params=querystring)
+        return response.json()

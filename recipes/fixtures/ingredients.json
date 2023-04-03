@@ -1,0 +1,1234 @@
+[
+{
+    "model": "recipes.ingredient",
+    "pk": 2,
+    "fields": {
+        "name": "151-proof demerara rum",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 3,
+    "fields": {
+        "name": "7UP",
+        "type": 2
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 4,
+    "fields": {
+        "name": "Amaro Nonino Quintessentia",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 5,
+    "fields": {
+        "name": "Angostura bitters",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 6,
+    "fields": {
+        "name": "Aperol",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 7,
+    "fields": {
+        "name": "Baileys",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 8,
+    "fields": {
+        "name": "Benedictine liqueur",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 9,
+    "fields": {
+        "name": "Calvados",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 10,
+    "fields": {
+        "name": "Campari",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 11,
+    "fields": {
+        "name": "Chambord",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 12,
+    "fields": {
+        "name": "Chamomile cordial",
+        "type": 2
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 13,
+    "fields": {
+        "name": "Champagne",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 14,
+    "fields": {
+        "name": "Cointreau",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 15,
+    "fields": {
+        "name": "Demerara rum",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 16,
+    "fields": {
+        "name": "Drambuie",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 17,
+    "fields": {
+        "name": "Fernet-Branca",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 18,
+    "fields": {
+        "name": "Galliano L'Autentico",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 19,
+    "fields": {
+        "name": "Gosling’s Black Seal rum",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 20,
+    "fields": {
+        "name": "Granny Smith apple juice",
+        "type": 2
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 21,
+    "fields": {
+        "name": "Green Chartreuse",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 22,
+    "fields": {
+        "name": "Heering cherry liqueur",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 23,
+    "fields": {
+        "name": "Irish Mist",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 24,
+    "fields": {
+        "name": "Islay single malt scotch",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 25,
+    "fields": {
+        "name": "Jamaica Overproof White Rum",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 26,
+    "fields": {
+        "name": "Kahlúa",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 27,
+    "fields": {
+        "name": "Lemonade",
+        "type": 2
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 28,
+    "fields": {
+        "name": "Lillet blanc",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 29,
+    "fields": {
+        "name": "Luxardo apricot",
+        "type": 3
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 30,
+    "fields": {
+        "name": "Maraschino Luxardo",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 31,
+    "fields": {
+        "name": "Old Tom gin",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 32,
+    "fields": {
+        "name": "Pernod liqueur",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 33,
+    "fields": {
+        "name": "Peychaud’s bitters",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 34,
+    "fields": {
+        "name": "Pusser’s rum",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 35,
+    "fields": {
+        "name": "Seagram’s 7 Crown whiskey",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 36,
+    "fields": {
+        "name": "Sloe gin",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 37,
+    "fields": {
+        "name": "Southern Comfort",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 38,
+    "fields": {
+        "name": "Yellow Chartreuse",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 39,
+    "fields": {
+        "name": "absinthe",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 40,
+    "fields": {
+        "name": "agave nectar",
+        "type": 3
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 41,
+    "fields": {
+        "name": "agave syrup",
+        "type": 3
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 42,
+    "fields": {
+        "name": "aged rum",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 43,
+    "fields": {
+        "name": "aguardiente",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 44,
+    "fields": {
+        "name": "amaretto",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 45,
+    "fields": {
+        "name": "apricot brandy",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 46,
+    "fields": {
+        "name": "black pepper",
+        "type": 3
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 47,
+    "fields": {
+        "name": "blanco tequila",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 48,
+    "fields": {
+        "name": "blended scotch",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 49,
+    "fields": {
+        "name": "blue curaçao",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 50,
+    "fields": {
+        "name": "bourbon",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 51,
+    "fields": {
+        "name": "brandy",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 52,
+    "fields": {
+        "name": "brown sugar",
+        "type": 3
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 53,
+    "fields": {
+        "name": "cachaca",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 54,
+    "fields": {
+        "name": "cayenne pepper",
+        "type": 3
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 55,
+    "fields": {
+        "name": "celery salt",
+        "type": 3
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 56,
+    "fields": {
+        "name": "cherry liqueur",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 57,
+    "fields": {
+        "name": "cinnamon syrup",
+        "type": 3
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 58,
+    "fields": {
+        "name": "club soda",
+        "type": 2
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 59,
+    "fields": {
+        "name": "coconut cream",
+        "type": 2
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 60,
+    "fields": {
+        "name": "coconut milk",
+        "type": 2
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 61,
+    "fields": {
+        "name": "coffee",
+        "type": 2
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 62,
+    "fields": {
+        "name": "coffee liqueur",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 63,
+    "fields": {
+        "name": "cognac",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 64,
+    "fields": {
+        "name": "cola",
+        "type": 2
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 65,
+    "fields": {
+        "name": "cranberry juice",
+        "type": 2
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 66,
+    "fields": {
+        "name": "cream",
+        "type": 2
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 67,
+    "fields": {
+        "name": "cream of coconut",
+        "type": 2
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 68,
+    "fields": {
+        "name": "creme de cacao",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 69,
+    "fields": {
+        "name": "creme de cassis",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 70,
+    "fields": {
+        "name": "creme de violette",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 71,
+    "fields": {
+        "name": "cucumber slices",
+        "type": 3
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 72,
+    "fields": {
+        "name": "dark rum",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 73,
+    "fields": {
+        "name": "dry vermouth",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 74,
+    "fields": {
+        "name": "egg white",
+        "type": 2
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 75,
+    "fields": {
+        "name": "egg yolk",
+        "type": 2
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 76,
+    "fields": {
+        "name": "elderflower cordial",
+        "type": 2
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 77,
+    "fields": {
+        "name": "espresso",
+        "type": 2
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 78,
+    "fields": {
+        "name": "falernum",
+        "type": 2
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 79,
+    "fields": {
+        "name": "fino sherry",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 80,
+    "fields": {
+        "name": "flower water",
+        "type": 2
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 81,
+    "fields": {
+        "name": "garlic powder",
+        "type": 3
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 82,
+    "fields": {
+        "name": "garlic salt",
+        "type": 3
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 83,
+    "fields": {
+        "name": "gin",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 84,
+    "fields": {
+        "name": "ginger ale",
+        "type": 2
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 85,
+    "fields": {
+        "name": "ginger beer",
+        "type": 2
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 86,
+    "fields": {
+        "name": "ginger syrup",
+        "type": 3
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 87,
+    "fields": {
+        "name": "gold rum",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 88,
+    "fields": {
+        "name": "grapefruit juice",
+        "type": 2
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 89,
+    "fields": {
+        "name": "grapefruit soda",
+        "type": 2
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 90,
+    "fields": {
+        "name": "green creme de menthe",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 91,
+    "fields": {
+        "name": "grenadine",
+        "type": 3
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 92,
+    "fields": {
+        "name": "herbsaint",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 93,
+    "fields": {
+        "name": "honey",
+        "type": 3
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 94,
+    "fields": {
+        "name": "honey syrup",
+        "type": 3
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 95,
+    "fields": {
+        "name": "horseradish",
+        "type": 3
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 96,
+    "fields": {
+        "name": "hot sauce",
+        "type": 3
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 97,
+    "fields": {
+        "name": "irish whiskey",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 98,
+    "fields": {
+        "name": "jamaican rum",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 99,
+    "fields": {
+        "name": "lemon",
+        "type": 3
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 100,
+    "fields": {
+        "name": "lemon and lime soda",
+        "type": 2
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 101,
+    "fields": {
+        "name": "lemon juice",
+        "type": 2
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 102,
+    "fields": {
+        "name": "lemon wedges",
+        "type": 3
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 103,
+    "fields": {
+        "name": "lemon-lime soda",
+        "type": 2
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 104,
+    "fields": {
+        "name": "light rum",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 105,
+    "fields": {
+        "name": "lime",
+        "type": 3
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 106,
+    "fields": {
+        "name": "lime juice",
+        "type": 2
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 107,
+    "fields": {
+        "name": "lime wedges",
+        "type": 3
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 108,
+    "fields": {
+        "name": "maraschino liqueur",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 109,
+    "fields": {
+        "name": "mezcal",
+        "type": 2
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 110,
+    "fields": {
+        "name": "milk",
+        "type": 2
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 111,
+    "fields": {
+        "name": "mint leaves",
+        "type": 3
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 112,
+    "fields": {
+        "name": "orange",
+        "type": 3
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 113,
+    "fields": {
+        "name": "orange bitters",
+        "type": 3
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 114,
+    "fields": {
+        "name": "orange curacao",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 115,
+    "fields": {
+        "name": "orange juice",
+        "type": 2
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 116,
+    "fields": {
+        "name": "orange liqueur",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 117,
+    "fields": {
+        "name": "orgeat",
+        "type": 3
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 118,
+    "fields": {
+        "name": "paprika",
+        "type": 3
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 119,
+    "fields": {
+        "name": "peach liqueur",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 120,
+    "fields": {
+        "name": "pimento dram",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 121,
+    "fields": {
+        "name": "pineapple",
+        "type": 3
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 122,
+    "fields": {
+        "name": "pineapple juice",
+        "type": 2
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 123,
+    "fields": {
+        "name": "pisco",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 124,
+    "fields": {
+        "name": "prosecco",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 125,
+    "fields": {
+        "name": "raspberry liqueur",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 126,
+    "fields": {
+        "name": "raspberry syrup",
+        "type": 3
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 127,
+    "fields": {
+        "name": "red chili pepper",
+        "type": 3
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 128,
+    "fields": {
+        "name": "red wine",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 129,
+    "fields": {
+        "name": "rich simple syrup",
+        "type": 3
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 130,
+    "fields": {
+        "name": "ruby port",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 131,
+    "fields": {
+        "name": "rum",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 132,
+    "fields": {
+        "name": "rye whiskey",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 133,
+    "fields": {
+        "name": "scotch whisky",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 134,
+    "fields": {
+        "name": "simple syrup",
+        "type": 3
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 135,
+    "fields": {
+        "name": "single malt scotch",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 136,
+    "fields": {
+        "name": "soda water",
+        "type": 2
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 137,
+    "fields": {
+        "name": "sparkling wine",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 138,
+    "fields": {
+        "name": "strawberry syrup",
+        "type": 3
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 139,
+    "fields": {
+        "name": "sugar",
+        "type": 3
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 140,
+    "fields": {
+        "name": "sugar cube",
+        "type": 3
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 141,
+    "fields": {
+        "name": "sweet vermouth",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 142,
+    "fields": {
+        "name": "tequila",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 143,
+    "fields": {
+        "name": "tomato juice",
+        "type": 2
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 144,
+    "fields": {
+        "name": "tonic water",
+        "type": 2
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 145,
+    "fields": {
+        "name": "triple sec",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 146,
+    "fields": {
+        "name": "vodka",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 147,
+    "fields": {
+        "name": "water",
+        "type": 2
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 148,
+    "fields": {
+        "name": "whipped cream",
+        "type": 3
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 149,
+    "fields": {
+        "name": "white creme de cacao",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 150,
+    "fields": {
+        "name": "white creme de menthe",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 151,
+    "fields": {
+        "name": "white grapefruit juice",
+        "type": 2
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 152,
+    "fields": {
+        "name": "white peach puree",
+        "type": 2
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 153,
+    "fields": {
+        "name": "white smooth grappa",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 154,
+    "fields": {
+        "name": "white wine",
+        "type": 1
+    }
+},
+{
+    "model": "recipes.ingredient",
+    "pk": 155,
+    "fields": {
+        "name": "worcestershire sauce",
+        "type": 3
+    }
+}
+]

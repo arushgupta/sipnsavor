@@ -1,0 +1,93 @@
+{% extends 'recipes/base.html' %}
+
+{% block content %}
+
+  <div class="container">
+    <div class="my-5">
+        <h2 class="mb-4">My Bar</h2>
+        {% if user_ingredients %}
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for user_ingredient in user_ingredients %}
+                <tr>
+                  <td>{{ user_ingredient.ingredient.name }}</td>
+                  <td>{{ user_ingredient.ingredient.get_type_display }}</td>
+                  <td>
+                    <form action="{% url 'delete_ingredient' user_ingredient.id %}" method="post">
+                      {% csrf_token %}
+                      <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                    </form>
+                  </td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+          <form action="{% url 'search_bar_recipes' %}" method="get">
+              <button type="submit" class="btn btn-primary mb-3">Search Recipes</button>
+          </form>
+        {% else %}
+          <p>You don't have any ingredients in your virtual bar yet.</p>
+        {% endif %}
+    </div>
+
+    <hr>
+    <div class="my-5">
+        <h4 class="mb-3">Add Ingredient</h4>
+        <form action="{% url 'add_ingredients' %}" method="post">
+          {% csrf_token %}
+          <div class="row">
+            <div class="col-md-6">
+              <select name="ingredients" class="form-select mb-3" multiple>
+                {% for ingredient in all_ingredients %}
+                  <option value="{{ ingredient.id }}">{{ ingredient.name }}</option>
+                {% endfor %}
+              </select>
+            </div>
+            <div class="col-md-6">
+              <button type="submit" class="btn btn-secondary mb-3">Add Ingredient</button>
+            </div>
+          </div>
+        </form>
+    </div>
+  </div>
+
+
+{% endblock content %}
+
+<!-- <h1>My Bar</h1>
+
+{% if user_ingredients %}
+  <ul>
+    {% for user_ingredient in user_ingredients %}
+      <li>{{ user_ingredient.ingredient.name }} : {{ user_ingredient.ingredient.get_type_display }}
+        <form method="post" action="{% url 'delete_ingredient' user_ingredient.pk %}">
+          {% csrf_token %}
+          <button type="submit"><i class="bi bi-x"></i></button>
+        </form>
+      </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p class="text-muted">You haven't added any ingredients to your bar yet.</p>
+{% endif %}
+
+<h2>Add Ingredients to Your Bar</h2>
+<form method="post" action="{% url 'add_ingredients' %}">
+  {% csrf_token %}
+  <div>
+    <label for="ingredients">Select ingredients to add:</label>
+    <select name="ingredients" multiple>
+      {% for ingredient in all_ingredients %}
+          <option value="{{ ingredient.id }}">{{ ingredient.name }}</option>
+      {% endfor %}
+    </select>
+  </div>
+  <button type="submit">Add Selected</button>
+</form> -->

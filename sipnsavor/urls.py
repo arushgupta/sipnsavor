@@ -26,5 +26,8 @@ urlpatterns = [
     path('register/', account_views.register, name='user-register'),
     path('login/', auth_views.LoginView.as_view(template_name='accounts/login.html'), name='user-login'),
     path('logout/', auth_views.LogoutView.as_view(template_name='accounts/logout.html'), name='user-logout'),
-    path('mybar/', account_views.mybar, name='user-bar'),
+    path('mybar/', account_views.my_bar, name='my-bar'),
+    path('mybar/add/', account_views.add_ingredients, name='add_ingredients'),
+    path('mybar/delete/<int:pk>/', account_views.delete_ingredient, name='delete_ingredient'),
+    path('mybar/recipes/', account_views.get_bar_recipes, name='search_bar_recipes'),
 ]

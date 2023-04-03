@@ -25,7 +25,7 @@
             </li>
             {% if user.is_authenticated %}
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'user-bar' %}" style="color: white;">My Bar</a>
+              <a class="nav-link" href="{% url 'my-bar' %}" style="color: white;">My Bar</a>
           </li>    
             <li class="nav-item">
                     <a class="nav-link" href="{% url 'user-logout' %}" style="color: white;">Logout</a>
@@ -45,7 +45,7 @@
     <div class="container mt-4 col-8">
       {% if messages %}
         {% for message in messages %}
-        <div class="alert alert-{{ message.tags }}">{{ message }}</div>
+        <div class="alert alert-{{ message.tags }} alert-dismissible fade show">{{ message }}</div>
         {% endfor %}
       {% endif %}
       {% block content %} {% endblock %}

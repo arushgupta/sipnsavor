@@ -25,6 +25,9 @@
 10. Create superuser:<br/>
 `./manage.py createsuperuser`
 
-11. Run Server:
+11. Load Data: <br/>
+`./manage.py loaddata fixtures/ingredients.json`
+
+12. Run Server:
 `./manage.py runserver`
 

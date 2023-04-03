@@ -1,0 +1,21 @@
+{% extends 'recipes/base.html' %}
+
+{% block content %}
+
+<div style="display: flex; flex-direction: row; flex-wrap: wrap">
+    {% for cocktail in cocktails %}
+    <div class="card" style="width: 18rem; margin: 10px">
+      <div class="card-body">
+        <h5 class="card-title"><a href="/dd.{{ cocktail.id }}" style="text-decoration: none;">{{ cocktail.cocktail_name }}</a></h5>
+        <h6 class="card-subtitle mb-2 text-muted">{% if cocktail.alcholic %} Alcoholic {% else %} Non-Alcoholic {% endif %}</h6>
+        <p class="card-text" style="overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">{{ cocktail.description }}</p>
+        <small class="text-muted">Tags:</small>
+        {% for tag in cocktail.tags %}
+        <span class="badge badge-pill badge-primary" style="overflow: hidden; display: inline-flex; ">{{ tag.tag.name }}</span>
+        {% endfor %}    
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+{% endblock content %}

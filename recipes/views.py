@@ -15,13 +15,10 @@ dummy_dd_recipe = {'id': 'ea43ffb8500c4bc8a32faffa', 'spirit_id': 'gin', 'cockta
 
 def home(request):
     trending_recipes = trending_cd_recipes["drinks"]
-    # trending_recipes = RecipeGetter.trending()
     
     popular_recipes = popular_cd_recipes["drinks"][:10]
-    # popular_recipes = RecipeGetter.popular()[:10]
 
     new_recipes = new_cd_recipes["drinks"]
-    # new_recipes = RecipeGetter.new()
 
     context = {
         'trending': trending_recipes,
@@ -33,9 +30,7 @@ def home(request):
 def recipe_detail(request, *args, **kwargs):
     db = kwargs.get("type")
     drink_id = kwargs.get("drink_id")
-    # recipe_detail = RecipeGetter.detail(db, drink_id)
-    # recipe_detail = dummy_dd_recipe
-    recipe_detail = dummy_cd_recipe["drinks"][0]
+    recipe_detail = RecipeGetter.detail(db, drink_id)
     
     if db not in {'cd', 'dd'} or recipe_detail == "None":
         raise Http404("Page not found")
