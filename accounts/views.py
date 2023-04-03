@@ -1,6 +1,6 @@
 from accounts import my_forms
 from recipes.recipe_getter import RecipeGetter
-from recipes.models import UserIngredient, Ingredient
+from recipes.models import UserIngredient, Ingredient, UserRecipe
 
 from django.urls import reverse
 from django.contrib import messages
@@ -58,3 +58,18 @@ def get_bar_recipes(request):
     
     cocktails = RecipeGetter.bar_cocktails(ingredient_names)
     return render(request, 'recipes/recipe_list.html', {'cocktails': cocktails})
+
+@login_required
+def get_collection(request):
+    user_recipes = UserRecipe.objects.filter(user=request.user)
+    return render(request, 'accounts/collection.html', {'cocktails': user_recipes})
+
+@login_required
+def delete_recipe(request, pk):
+    user_recipe = get_object_or_404(UserRecipe, id=pk, user=request.user)
+    if request.method == 'POST':
+        user_recipe.delete()
+        messages.success(request, _(f'Removed {user_recipe.recipe_name} from your collection.'))
+        return redirect('collection')
+    else:
+        return render(request, 'accounts/confirm_recipe_delete.html', {'user_recipe': user_recipe})

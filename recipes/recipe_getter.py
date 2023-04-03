@@ -97,5 +97,4 @@ class RecipeGetter:
 	        "X-RapidAPI-Host": os.environ.get('DD_API_HOST', '')
         }
         response = requests.request("GET", url, headers=headers, params=querystring)
-        import pdb; pdb.set_trace()
         return response.json()

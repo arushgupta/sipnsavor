@@ -4,106 +4,137 @@
 {% block content %}
 
 {% if type == 'dd' %}
-<div class="container mt-5">
-  <div class="row justify-content-center">
-    <div class="col-lg-8">
-      <div class="card mb-3">
-        <div class="card-body">
-          <h1 class="card-title text-center mb-4">{{ recipe.cocktail_name }}</h1>
-          <p class="card-text">{{ recipe.description }}</p>
-          {% if recipe.tags %}
-          <div class="row">
-            <div class="col-lg-12">
-              <ul class="list-unstyled">
-                {% for tag in recipe.tags %}
-                  <li><span class="badge text-dark rounded-pill" style="padding:0.5em 0.75em!important; background-color: #e8e9ea;">{{ tag.tag.name }}</span></li>
-                {% endfor %}
-              </ul>
-            </div>
-          </div>
-          {% endif %}
-          <hr>
-          <div class="row">
-            <div class="col-lg-4">
-              <p class="card-text"><strong>Alcoholic:</strong> {% if recipe.alcoholic %}Yes{% else %}No{% endif %}</p>
-            </div>
-            <div class="col-lg-4">
-              <p class="card-text"><strong>Garnish:</strong> {{ recipe.garnish }}</p>
-            </div>
-            <div class="col-lg-4">
-              <p class="card-text"><strong>Glass:</strong></p>
-              {% for glass in recipe.glasses %}
-                <img src="{{ glass.glass.image_url }}" alt="{{ glass.glass.name }}" title="{{ glass.glass.name }}" width="50" height="50">
-              {% endfor %}
-            </div>
-          </div>
-          <hr>
-          <div class="row">
-            <div class="col-lg-6">
-              <h3>Ingredients:</h3>
-              <ul>
-                {% for ingredient in recipe.ingredients %}
-                  <li>{{ ingredient.amount }} {{ ingredient.ingredient.name }}</li>
-                {% endfor %}
-              </ul>
-            </div>
-            <div class="col-lg-6">
-              <h3>Steps:</h3>
-              <ol>
-                {% for step in recipe.steps %}
-                  <li>{{ step.instructions }}</li>
-                {% endfor %}
-              </ol>
-            </div>
-          </div>
-          <hr>
-          {% if recipe.aditional_tips %}
-          <div class="row">
-            <div class="col-lg-12">
-              <h3>Additional Tips:</h3>
-              <p>{{ recipe.additional_tips }}</p>
-            </div>
-          </div>
-          <hr>
-          {% endif %}
-          <div style="text-align: center;">
-            <a href="save/" class="btn btn-lg" style="background-color: #c4a29e; color: white;">Save</a>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-{% else %}
-<div class="container">
-    <div class="row">
-      <div class="col-md-8 offset-md-2">
+<form method="post" action="{% url 'recipe-save' %}">
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
         <div class="card mb-3">
-          <img class="card-img-top" src="{{ recipe.strDrinkThumb }}" alt="{{ recipe.strDrink }}">
           <div class="card-body">
-            <h5 class="card-title">{{ recipe.strDrink }}</h5>
-            <p class="card-text"><strong>Glass:</strong> {{ recipe.strGlass }}</p>
-            <p class="card-text"><strong>Instructions:</strong> {{ recipe.strInstructions }}</p>
-            <p class="card-text"><strong>Ingredients:</strong></p>
-            <table>
-              {% for i in 15|get_range %}
-              <tr>
-                <td>
-                    {% if recipe|get_ingredient:i %}
-                    <strong>{{ recipe|get_measure:i }} {{ recipe|get_ingredient:i }}</strong>
-                    {% endif %}
-                </td>
-              </tr>
-              {% endfor %}
-            </table>
-            <div style="text-align: center;">
-                <a href="save/" class="btn btn-lg btn-primary">Save</a>
+            <h1 class="card-title text-center mb-4">{{ recipe.cocktail_name }}</h1>
+            <p class="card-text">{{ recipe.description }}</p>
+            {% if recipe.tags %}
+            <div class="row">
+              <div class="col-lg-12">
+                <ul class="list-unstyled">
+                  {% for tag in recipe.tags %}
+                    <li><span class="badge text-dark rounded-pill" style="padding:0.5em 0.75em!important; background-color: #e8e9ea;">{{ tag.tag.name }}</span></li>
+                  {% endfor %}
+                </ul>
+              </div>
             </div>
+            {% endif %}
+            <hr>
+            <div class="row">
+              <div class="col-lg-4">
+                <p class="card-text"><strong>Alcoholic:</strong> {% if recipe.alcoholic %}Yes{% else %}No{% endif %}</p>
+              </div>
+              <div class="col-lg-4">
+                <p class="card-text"><strong>Garnish:</strong> {{ recipe.garnish }}</p>
+              </div>
+              <div class="col-lg-4">
+                <p class="card-text"><strong>Glass:</strong></p>
+                {% for glass in recipe.glasses %}
+                  <img src="{{ glass.glass.image_url }}" alt="{{ glass.glass.name }}" title="{{ glass.glass.name }}" width="50" height="50">
+                {% endfor %}
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-lg-6">
+                <h3>Ingredients:</h3>
+                <ul>
+                  {% for ingredient in recipe.ingredients %}
+                    <li>{{ ingredient.amount }} {{ ingredient.ingredient.name }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <h3>Steps:</h3>
+                <ol>
+                  {% for step in recipe.steps %}
+                    <li>{{ step.instructions }}</li>
+                  {% endfor %}
+                </ol>
+              </div>
+            </div>
+            <hr>
+            {% if recipe.aditional_tips %}
+            <div class="row">
+              <div class="col-lg-12">
+                <h3>Additional Tips:</h3>
+                <p>{{ recipe.additional_tips }}</p>
+              </div>
+            </div>
+            <hr>
+            {% endif %}
+            {% csrf_token %}
+            <input type="hidden" name="db_type" value="{{ type }}">
+            <input type="hidden" name="cocktail_name" value="{{ recipe.cocktail_name }}">
+            <input type="hidden" name="recipe_id" value="{{ recipe.id }}">
+            <input type="hidden" name="description" value="{{ recipe.description }}">
+          {% for tag in recipe.tags %}
+            <input type="hidden" name="tags" value="{{ tag.tag.name }}">
+          {% endfor %}
+          {% if recipe.alcoholic %}
+    <!-- Return True -->
+    <input type="hidden" name="alcoholic" value="0"> 
+    {% else %}
+    <!-- Return False -->
+    <input type="hidden" name="alcoholic" value="1">
+    {% endif %}
+          <button type="submit" class="btn btn-lg btn-primary">Add to Collection</button>
           </div>
         </div>
       </div>
     </div>
   </div>
+</form>
+{% else %}
+<form method="post" action="{% url 'recipe-save' %}">
+  <div class="container">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <div class="card mb-3">
+            <img class="card-img-top" src="{{ recipe.strDrinkThumb }}" alt="{{ recipe.strDrink }}">
+            <div class="card-body">
+              <h5 class="card-title">{{ recipe.strDrink }}</h5>
+              <p class="card-text"><strong>Glass:</strong> {{ recipe.strGlass }}</p>
+              <p class="card-text"><strong>Instructions:</strong> {{ recipe.strInstructions }}</p>
+              <p class="card-text"><strong>Ingredients:</strong></p>
+              <table>
+                {% for i in 15|get_range %}
+                <tr>
+                  <td>
+                      {% if recipe|get_ingredient:i %}
+                      <strong>{{ recipe|get_measure:i }} {{ recipe|get_ingredient:i }}</strong>
+                      {% endif %}
+                  </td>
+                </tr>
+                {% endfor %}
+              </table>
+              {% csrf_token %}
+    <input type="hidden" name="db_type" value="{{ type }}">
+    <input type="hidden" name="cocktail_name" value="{{ recipe.strDrink }}">
+    <input type="hidden" name="recipe_id" value="{{ recipe.idDrink }}">
+    {% if recipe.alcoholic == 'Alcoholic' %}
+    <!-- Return True -->
+    <input type="hidden" name="alcoholic" value="0"> 
+    {% else %}
+    <!-- Return False -->
+    <input type="hidden" name="alcoholic" value="1">
+    {% endif %}
+  <input type="hidden" name="instructions" value="{{ recipe.strInstructions }}">
+  <input type="hidden" name="image_url" value="{{ recipe.strDrinkThumb }}">
+  <div style="text-align: center;">
+    <button type="submit" class="btn btn-lg btn-primary">Add to Collection</button>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</form>
 {% endif %}
 {% endblock content %}
 
