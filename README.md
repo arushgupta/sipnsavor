@@ -22,6 +22,9 @@
 9. Run Migrations:<br/>
 `./manage.py migrate`
 
-10. Run Server:
+10. Create superuser:<br/>
+`./manage.py createsuperuser`
+
+11. Run Server:
 `./manage.py runserver`
 

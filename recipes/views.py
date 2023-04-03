@@ -46,6 +46,9 @@ def recipe_detail(request, *args, **kwargs):
     }
     return render(request, 'recipes/recipe.html', context)
 
+def about(request):
+    return render(request, 'recipes/about.html')
+
 def recipe_saver(request, *args, **kwargs):
     return None
 

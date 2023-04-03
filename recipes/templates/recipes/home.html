@@ -2,6 +2,7 @@
 
 {% block content %}
 
+<!-- Jumbotron Banner and Basic Search -->
 <div class="jumbotron jumbotron-fluid" style="color: #4a4a4a; background-color: white;">
   <div class="container text-center">
     <h1 class="display-4 mb-4">Make your own cocktails!</h1>
@@ -83,79 +84,3 @@
 </div>
 
 {% endblock content %}
-
-
-
-<!-- <div class="container-fluid">
-  <div class="row">
-    <div class="col-12">
-      <h2 class="text-center">Trending 🔥</h2>
-    </div>
-  </div>
-  <div class="row overflow-auto" style="white-space: nowrap;">
-    {% for recipe in recipes %}
-    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-      <div class="card h-100">
-        <img src="{{ recipe.strDrinkThumb }}" class="card-img-top" alt="{{ recipe.strDrink }}">
-        <div class="card-body d-flex flex-column h-100" style="flex-wrap: wrap; flex-shrink: 1; flex-grow: 1;">
-          <h5 class="card-title"><a href="cd.{{ recipe.idDrink }}" style="text-decoration: none;">{{ recipe.strDrink }}</a></h5>
-          <h6 class="card-subtitle mb-2 text-muted">{{ recipe.strAlcoholic }}</h6>
-          <p class="card-text" style="word-wrap: break-word;">{{ recipe.strInstructions }}</p>
-        </div>
-      </div>
-    </div>
-    {% endfor %}
-  </div>
-</div> -->
-<!-- -->
-<!-- <h1>Drinks</h1> -->
-<!-- <div class="card-deck">
-  {% for recipe in recipes %}
-  <div class="card" style="background-image: url({{recipe.strDrinkThumb}})">
-    <div class="card-body">
-      <h5 class="card-title">
-        <a href="#" class="card-link">{{recipe.strDrink}}</a>
-      </h5>
-      <h6 class="card-subtitle mb-2 text-muted">{{recipe.strAlcoholic}}</h6>
-      <p class="card-text">{{recipe.strInstructions}}</p>
-    </div>
-  </div>
-  {% endfor %}
-</div> -->
-<!-- <div class="card-container" style="max-height:400px;">
-  <div class="d-flex flex-row flex-nowrap overflow-auto">
-  {% for recipe in recipes %}
-      <div class="card flex-row-reverse mx-2">
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">
-                <a href="cd.{{recipe.idDrink}}" class="card-link">{{ recipe.strDrink }}</a></h5>
-              <h6 class="card-subtitle mb-2 text-muted">{{ recipe.strAlcoholic }}</h6>
-              <p class="card-text">{{ recipe.strInstructions }}</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <a href="cd.{{recipe.idDrink}}">
-              <img src="{{ recipe.strDrinkThumb }}" alt="{{ recipe.strDrink }}" class="card-img-right" width="200" height="200">
-            </a>
-          </div>
-      </div>
-    {% endfor %}
-  </div>
-</div> -->
-
-
-
-<!-- {% for recipe in recipes %}
-<div class="card my-4">
-  <img src= "{{recipe.strDrinkThumb}}" class="card-image-top" width="200", height="200">
-  <div class="card-body">
-    <h5 class="card-title">{{ recipe.strDrink }}</h5>
-    <h6 class="card-subtitle mb-2 text-muted">{{ recipe.strAlcoholic }}</h6>
-    <p class="card-text">{{ recipe.strInstructions }}</p>
-    <a href="#" class="card-link">View Recipe</a>
-  </div>
-</div>
-{% endfor %} -->
-<!-- -->
-

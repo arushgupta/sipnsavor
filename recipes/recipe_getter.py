@@ -1,5 +1,5 @@
-import requests
 import os
+import requests
 
 class RecipeGetter:
 
@@ -13,7 +13,7 @@ class RecipeGetter:
         return response.json()["drinks"]
     
     def popular():
-        url = "https://the-cocktail-db.p.rapidapi.com/popular.php"
+        url = f"https://{os.environ.get('CD_API_HOST', '')}/popular.php"
 
         headers = {
 	        "X-RapidAPI-Key": os.environ.get('API_KEY', ''),
@@ -25,7 +25,7 @@ class RecipeGetter:
 
 
     def new():
-        url = "https://the-cocktail-db.p.rapidapi.com/latest.php"
+        url = f"https://{os.environ.get('CD_API_HOST', '')}/latest.php"
 
         headers = {
 	        "X-RapidAPI-Key": os.environ.get('API_KEY', ''),
@@ -37,10 +37,10 @@ class RecipeGetter:
     
     def detail(db, drink_id):
         if db == 'cd':
-            url = "https://the-cocktail-db.p.rapidapi.com/lookup.php"
+            url = f"https://{os.environ.get('CD_API_HOST', '')}/lookup.php"
             headers = {
             	"X-RapidAPI-Key": os.environ.get('API_KEY', ''),
-	        "X-RapidAPI-Host": os.environ.get('CD_API_HOST', '')
+	            "X-RapidAPI-Host": os.environ.get('CD_API_HOST', '')
             }
             querystring = {"i": drink_id}
 
@@ -60,5 +60,4 @@ class RecipeGetter:
             return None
         
         return response
-    
     
