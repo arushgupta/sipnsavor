@@ -1,0 +1,102 @@
+[
+    {
+      "id": "anise",
+      "name": "Anise"
+    },
+    {
+      "id": "bitter",
+      "name": "Bitter"
+    },
+    {
+      "id": "citrus",
+      "name": "Citrus"
+    },
+    {
+      "id": "classic",
+      "name": "Classic Cocktails"
+    },
+    {
+      "id": "dessert",
+      "name": "Dessert Cocktails"
+    },
+    {
+      "id": "duos",
+      "name": "Duos"
+    },
+    {
+      "id": "fruity",
+      "name": "Fruity"
+    },
+    {
+      "id": "herbaceous",
+      "name": "Herbaceous"
+    },
+    {
+      "id": "highball",
+      "name": "Highball"
+    },
+    {
+      "id": "iba",
+      "name": "International Bartenders Association Official Cocktails"
+    },
+    {
+      "id": "milkandhoney",
+      "name": "Milk & Honey"
+    },
+    {
+      "id": "modernclassic",
+      "name": "Modern Classic Cocktails"
+    },
+    {
+      "id": "modern",
+      "name": "Modern Cocktails"
+    },
+    {
+      "id": "nonalcoholic",
+      "name": "Nonalcoholic Drinks and Cocktails"
+    },
+    {
+      "id": "punches",
+      "name": "Punches"
+    },
+    {
+      "id": "savory",
+      "name": "Savory"
+    },
+    {
+      "id": "shooter",
+      "name": "Shooter"
+    },
+    {
+      "id": "shots",
+      "name": "Shots & Shooters"
+    },
+    {
+      "id": "smoky",
+      "name": "Smoky"
+    },
+    {
+      "id": "sour",
+      "name": "Sour"
+    },
+    {
+      "id": "spicy",
+      "name": "Spicy"
+    },
+    {
+      "id": "summer",
+      "name": "Summer"
+    },
+    {
+      "id": "sweet",
+      "name": "Sweet"
+    },
+    {
+      "id": "tiki",
+      "name": "Tiki Cocktails"
+    },
+    {
+      "id": "tropical",
+      "name": "Tropical Cocktails"
+    }
+  ]
